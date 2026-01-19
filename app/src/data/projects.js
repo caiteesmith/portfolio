@@ -59,15 +59,17 @@ export const PROJECTS = [
     title: "ApplicationTracker",
     org: "Personal Project",
     summary:
-      "A local-first job application tracker built with Python and Streamlit that helps organize roles, track follow-ups, visualize application outcomes, and spot momentum over time.",
+      "A job application tracker built with Python, Streamlit, and Supabase that helps organize roles, track follow-ups, visualize outcomes, and stay consistent during a job search.",
     href: "https://application-tracker-tool.streamlit.app/",
     code: "https://github.com/caiteesmith/application-tracker",
     tags: [
       "Python",
       "Streamlit",
+      "Postgres",
+      "Supabase",
       "SQL",
-      "SQLite",
       "Data Visualization",
+      "Plotly",
       "Sankey Diagram",
       "UX/UI",
       "Product Design",
@@ -75,12 +77,12 @@ export const PROJECTS = [
     ],
     img: "images/projects/application-tracker-ss-2.png",
     impact: [
-      "Built a clean UI for tracking applications, roles, salaries, notes, and follow-up dates",
-      "Implemented a local SQLite storage layer so users retain full control of their data",
-      "Added a Sankey diagram to visualize how applications flow into different outcomes",
-      "Created clear filtering to find applications by status, location, or keyword",
-      "Added an analytics section including applications sent, unique companies, etc.",
-      "Implemented screenshot uploads to preserve job posting details before expiration",
+      "Built an intuitive UI for logging important details of job applications",
+      "Integrated Supabase to provide reliable, persistent data storage across sessions",
+      "Implemented a Sankey diagram to visualize how applications flow through stages",
+      "Added rich filtering to find applications by status, location type, or keyword",
+      "Created an analytics section summarizing total applications, unique companies, etc.",
+      "Implemented screenshot uploads to preserve job posting details before post expires",
     ]
   },
   {
