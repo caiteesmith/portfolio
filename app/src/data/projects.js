@@ -55,6 +55,35 @@ export const PROJECTS = [
     ]
   },
   {
+    id: "application-tracker",
+    title: "ApplicationTracker",
+    org: "Personal Project",
+    summary:
+      "A local-first job application tracker built with Python and Streamlit that helps organize roles, track follow-ups, visualize application outcomes, and spot momentum over time.",
+    href: "https://application-tracker-tool.streamlit.app/",
+    code: "https://github.com/caiteesmith/application-tracker",
+    tags: [
+      "Python",
+      "Streamlit",
+      "SQL",
+      "SQLite",
+      "Data Visualization",
+      "Sankey Diagram",
+      "UX/UI",
+      "Product Design",
+      "Career Tools"
+    ],
+    img: "images/projects/application-tracker-ss-2.png",
+    impact: [
+      "Built a clean UI for tracking applications, roles, salaries, notes, and follow-up dates",
+      "Implemented a local SQLite storage layer so users retain full control of their data",
+      "Added a Sankey diagram to visualize how applications flow into different outcomes",
+      "Created clear filtering to find applications by status, location, or keyword",
+      "Added an analytics section including applications sent, unique companies, etc.",
+      "Implemented screenshot uploads to preserve job posting details before expiration",
+    ]
+  },
+  {
     id: "chatbots",
     title: "AI/ML Chatbot Containerization",
     org: "Valley Bank",
