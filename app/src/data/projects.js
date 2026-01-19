@@ -59,14 +59,15 @@ export const PROJECTS = [
     title: "ApplicationTracker",
     org: "Personal Project",
     summary:
-      "A job application tracker built with Python, Streamlit, and Supabase that helps organize roles, track follow-ups, visualize outcomes, and stay consistent during a job search.",
+      "A streamlined job application tracker built with Python, Streamlit, and Supabase. Users can securely create accounts, log applications, track follow-ups, upload screenshots, and visualize their job search with clean analytics.",
     href: "https://application-tracker-tool.streamlit.app/",
     code: "https://github.com/caiteesmith/application-tracker",
     tags: [
       "Python",
       "Streamlit",
-      "Postgres",
       "Supabase",
+      "Postgres",
+      "Auth",
       "SQL",
       "Data Visualization",
       "Plotly",
@@ -77,12 +78,13 @@ export const PROJECTS = [
     ],
     img: "images/projects/application-tracker-ss-2.png",
     impact: [
-      "Built an intuitive UI for logging important details of job applications",
-      "Integrated Supabase to provide reliable, persistent data storage across sessions",
-      "Implemented a Sankey diagram to visualize how applications flow through stages",
-      "Added rich filtering to find applications by status, location type, or keyword",
-      "Created an analytics section summarizing total applications, unique companies, etc.",
-      "Implemented screenshot uploads to preserve job posting details before post expires",
+      "Implemented secure user auth and login with Supabase Auth",
+      "Designed an intuitive UI for logging job applications",
+      "Integrated persistent data storage using Supabase Postgres",
+      "Developed a Sankey diagram to visualize how applications flow across stages",
+      "Built an analytics dashboard summarizing total applications, unique companies, etc.",
+      "Added screenshot uploads to save job posting details before listings expire",
+      "Created fast, flexible filtering by status, location type, or keyword"
     ]
   },
   {
