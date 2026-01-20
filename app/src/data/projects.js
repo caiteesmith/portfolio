@@ -4,12 +4,14 @@ export const PROJECTS = [
   title: "The Financial Breakdown",
   org: "Personal Project",
   summary:
-    "A set of spreadsheet-style personal finance tools built with Python and Streamlit to help organize income, expenses, debt, and housing so the numbers make sense before decisions are made.",
+    "A set of spreadsheet-style personal finance tools built with Python, Streamlit, and a Supabase backend to organize income, expenses, debt, and housing so the numbers make sense before decisions are made.",
   href: "https://the-financial-breakdown.streamlit.app/",
   code: "https://github.com/caiteesmith/the-financial-breakdown",
   tags: [
     "Python",
     "Streamlit",
+    "Supabase",
+    "PostgreSQL",
     "Product Design",
     "UX/UI",
     "Pandas",
@@ -23,7 +25,8 @@ export const PROJECTS = [
     "Designed an at-a-glance summary highlighting the most important financial signals",
     "Implemented an emergency minimum to model survival-level monthly spending",
     "Designed a mortgage payoff calculator to see amortization and early payoff timelines",
-    "Enabled exportable snapshots and CSV outputs for portability and offline analysis"
+    "Enabled exportable snapshots and CSV outputs for portability and offline analysis",
+    "Added Supabase authentication and a user-backed database so users can save data"
   ]
   },
   {
