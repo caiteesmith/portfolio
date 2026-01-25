@@ -1,6 +1,10 @@
 // src/data/writing.js
 export const WRITING = [
   {
+    title:"How I'm Learning to Think More Like a Solution Architect (Because Honestly, I'm Worried About AI Replacing My Job)",
+    href:"https://medium.com/@caiteecodes/how-im-learning-to-think-more-like-a-solution-architect-because-honestly-i-am-worried-about-ai-8a1bc7583a5c"
+  },
+  {
     title:"Better Off Dead: 10 Outdated Web Trends",
     href:"https://medium.com/@caiteecodes/better-off-dead-10-outdated-web-design-trends-were-happy-to-forget-cfab0d94cea5"
   },
