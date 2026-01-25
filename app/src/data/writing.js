@@ -13,6 +13,10 @@ export const WRITING = [
     href:"https://medium.com/@caiteecodes/dwight-you-ignorant-marketer-12-sales-and-marketing-principles-that-weve-learned-from-the-office-7b2aa9d7b89f"
   },
   {
+    title:"Which Programming Language Should You Learn for Your Career?",
+    href:"https://medium.com/@caiteecodes/which-programming-language-should-you-learn-for-your-career-1be2da2545e8"
+  },
+  {
     title:"13 Pet Peeves That Drive Designers and Developers Crazy",
     href:"https://medium.com/@caiteecodes/13-pet-peeves-that-drive-designers-and-developers-crazy-a33e354b63ba"
   },
