@@ -45,6 +45,7 @@ const ROLES = [
       "Built Terraform & Azure DevOps pipelines to standardize deployments",
       "Automated data transformations & synchronization into Cosmos DB with Python workflows",
       "Improved reliability with custom logging, response envelopes, and 80%+ unit tests",
+      "Owned change request implementation and deployment in a regulated financial environment",
       "Containerized an internal AI chatbot with Docker for consistent runtime",
     ],
   },
