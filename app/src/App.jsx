@@ -8,8 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import StickyHireMe from "@/components/StickyHireMe";
-import CaseStudyModal from "@/components/CaseStudyModal"; // HIT case study
-import ChatbotCaseStudyModal from "@/components/ChatbotCaseStudyModal"; // NEW: chatbots case study
+import CaseStudyModal from "@/components/CaseStudyModal"; // single modal now
 
 import useLocalStorage from "@/hooks/useLocalStorage";
 import useActiveSection from "@/hooks/useActiveSection";
@@ -56,8 +55,7 @@ export default function App() {
   ];
   const active = useActiveSection(sectionIds);
 
-  const [showHit, setShowHit] = useState(false);
-  const [showChatbots, setShowChatbots] = useState(false);
+  const [openCaseStudy, setOpenCaseStudy] = useState(null);
 
   return (
     <div className="relative min-h-screen portfolio-bg">
@@ -106,22 +104,15 @@ export default function App() {
           icon={<Search className="h-6 w-6" />}
           title="Projects_"
         >
-          <Projects
-            onOpenCaseStudy={(id) => {
-              if (id === "hit") setShowHit(true);
-              if (id === "chatbots") setShowChatbots(true);
-            }}
-          />
+          {/* 🔑 Pass the setter directly; it will receive "hit" | "chatbots" | "hotlist" */}
+          <Projects onOpenCaseStudy={setOpenCaseStudy} />
         </Section>
 
-        {/* AI/ML Chatbots containerization case study */}
-        <ChatbotCaseStudyModal
-          open={showChatbots}
-          onClose={() => setShowChatbots(false)}
+        {/* 🔍 Single unified case study modal */}
+        <CaseStudyModal
+          open={openCaseStudy}
+          onClose={() => setOpenCaseStudy(null)}
         />
-        
-        {/* HIT microservices case study */}
-        <CaseStudyModal open={showHit} onClose={() => setShowHit(false)} />
 
         {/* Writing */}
         <Section

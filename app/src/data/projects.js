@@ -1,33 +1,33 @@
 export const PROJECTS = [
   {
-  id: "financial-breakdown",
-  title: "The Financial Breakdown",
-  org: "Personal Project",
-  summary:
-    "A set of spreadsheet-style personal finance tools built with Python, Streamlit, and a Supabase backend to organize income, expenses, debt, and housing so the numbers make sense before decisions are made.",
-  href: "https://the-financial-breakdown.streamlit.app/",
-  code: "https://github.com/caiteesmith/the-financial-breakdown",
-  tags: [
-    "Python",
-    "Streamlit",
-    "Supabase",
-    "PostgreSQL",
-    "Product Design",
-    "UX/UI",
-    "Pandas",
-    "Financial Modeling",
-    "Data Visualization",
-    "Personal Finance"
-  ],
-  img: "images/projects/personal-finance-dashboard.png",
-  impact: [
-    "Built a spreadsheet-style cash flow tool to itemize personal finances",
-    "Designed an at-a-glance summary highlighting the most important financial signals",
-    "Implemented an emergency minimum to model survival-level monthly spending",
-    "Designed a mortgage payoff calculator to see amortization and early payoff timelines",
-    "Enabled exportable snapshots and CSV outputs for portability and offline analysis",
-    "Added Supabase authentication and a user-backed database so users can save data"
-  ]
+    id: "financial-breakdown",
+    title: "The Financial Breakdown",
+    org: "Personal Project",
+    summary:
+      "A set of spreadsheet-style personal finance tools built with Python, Streamlit, and a Supabase backend to organize income, expenses, debt, and housing so the numbers make sense before decisions are made.",
+    href: "https://the-financial-breakdown.streamlit.app/",
+    code: "https://github.com/caiteesmith/the-financial-breakdown",
+    tags: [
+      "Python",
+      "Streamlit",
+      "Supabase",
+      "PostgreSQL",
+      "Product Design",
+      "UX/UI",
+      "Pandas",
+      "Financial Modeling",
+      "Data Visualization",
+      "Personal Finance"
+    ],
+    img: "images/projects/personal-finance-dashboard.png",
+    impact: [
+      "Built a spreadsheet-style cash flow tool to itemize personal finances",
+      "Designed an at-a-glance summary highlighting the most important financial signals",
+      "Implemented an emergency minimum to model survival-level monthly spending",
+      "Designed a mortgage payoff calculator to see amortization and early payoff timelines",
+      "Enabled exportable snapshots and CSV outputs for portability and offline analysis",
+      "Added Supabase authentication and a user-backed database so users can save data"
+    ]
   },
   {
     id: "photo-ops-suite",
@@ -145,6 +145,35 @@ export const PROJECTS = [
       "Implemented structured logging for cross-service traceability",
       "Automated deployments with Terraform and Azure Pipelines",
       "Maintained strong unit test coverage (NUnit/Moq) and clear API contracts (OpenAPI)"
+    ]
+  },
+  {
+    id: "hotlist",
+    title: "HotList Search Service",
+    org: "Valley Bank",
+    summary:
+      "A .NET 8 SYS and EXP-layer microservice that validates and processes hotlist search requests, used by front-office teams to quickly identify potential high-risk customers by querying internal customer records and returning standardized match results.",
+    href: null,
+    code: null,
+    tags: [
+      ".NET 8",
+      "C#",
+      "Clean Architecture",
+      "SYS/EXP Layers",
+      "Azure Functions",
+      "OpenAPI",
+      "DTOs",
+      "NUnit",
+      "Moq"
+    ],
+    impact: [
+      "Built the SYS-layer service used by front-office teams to identify high-risk customers",
+      "Implemented flexible validation across five search criteria",
+      "Designed clean DTOs and contracts across EXP > SYS > repository layers",
+      "Normalized search logic and response models for consistent EXP consumption",
+      "Produced clear API documentation with OpenAPI/Swagger",
+      "Created comprehensive NUnit unit tests for validators, services, and controllers",
+      "Guided teammate through building the EXP microservice from config to deployment"
     ]
   },
   {

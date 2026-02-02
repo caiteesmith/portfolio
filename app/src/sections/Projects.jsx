@@ -75,7 +75,7 @@ export default function Projects({ onOpenCaseStudy }) {
                       className="rounded-lg w-full aspect-video object-cover mb-3"
                     />
                   ) : (
-                    <div className="rounded-lg w-full aspect-video mb-3 bg-gradient-to-br from-pink-300/40 via-violet-300/40 to-amber-300/40 grid place-items-center">
+                    <div className="rounded-lg w-full aspect-video mb-3 bg-linear-to-br from-pink-300/40 via-violet-300/40 to-amber-300/40 grid place-items-center">
                       <span className="text-sm text-gray-600 dark:text-gray-300">
                         Internal Application
                       </span>
@@ -130,7 +130,7 @@ export default function Projects({ onOpenCaseStudy }) {
                   {/* Case study button only for projects that actually have one */}
                   {!p.href &&
                     !p.code &&
-                    (p.id === "hit" || p.id === "chatbots") && (
+                    (p.id === "hit" || p.id === "chatbots" || p.id === "hotlist") && (
                       <Button size="sm" onClick={() => onOpenCaseStudy?.(p.id)}>
                         Case study
                       </Button>
