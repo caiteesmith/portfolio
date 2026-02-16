@@ -4,19 +4,19 @@ export const PROJECTS = [
     title: "HotList Search Service",
     org: "Valley Bank",
     summary:
-      "A .NET 8 SYS and EXP-layer microservice that validates and processes hotlist search requests, used by front-office teams to quickly identify potential high-risk customers by querying internal customer records and returning standardized match results.",
+  "A .NET 8 microservice built using Clean Architecture (SYS/EXP layers) to validate and process hotlist search requests in a regulated financial environment. The service enables front-office teams to identify potential high-risk customers by executing multi-criteria searches against internal records and returning standardized, audit-friendly match results.",
     href: null,
     code: null,
     tags: [
       ".NET 8",
       "C#",
       "Clean Architecture",
-      "SYS/EXP Layers",
       "Azure Functions",
+      "SQL Server",
+      "Repository Pattern",
       "OpenAPI",
-      "DTOs",
       "NUnit",
-      "Moq"
+      "Azure DevOps"
     ],
     impact: [
       "Built the SYS-layer service used by front-office teams to identify high-risk customers",
