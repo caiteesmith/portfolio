@@ -1,5 +1,120 @@
 export const PROJECTS = [
   {
+    id: "hotlist",
+    title: "HotList Search Service",
+    org: "Valley Bank",
+    summary:
+      "A .NET 8 SYS and EXP-layer microservice that validates and processes hotlist search requests, used by front-office teams to quickly identify potential high-risk customers by querying internal customer records and returning standardized match results.",
+    href: null,
+    code: null,
+    tags: [
+      ".NET 8",
+      "C#",
+      "Clean Architecture",
+      "SYS/EXP Layers",
+      "Azure Functions",
+      "OpenAPI",
+      "DTOs",
+      "NUnit",
+      "Moq"
+    ],
+    impact: [
+      "Built the SYS-layer service used by front-office teams to identify high-risk customers",
+      "Implemented flexible validation across five search criteria",
+      "Designed clean DTOs and contracts across EXP > SYS > repository layers",
+      "Normalized search logic and response models for consistent EXP consumption",
+      "Produced clear API documentation with OpenAPI/Swagger",
+      "Created comprehensive NUnit unit tests for validators, services, and controllers",
+      "Guided teammate through building the EXP microservice from config to deployment"
+    ]
+  },
+  {
+    id: "chatbots",
+    title: "AI/ML Chatbot Containerization",
+    org: "Valley Bank",
+    summary:
+      "Modernizing internal DataRobot AI chatbots by containerizing services with Docker Compose and preparing them for Kubernetes deployment.",
+    href: null,
+    code: null,
+    tags: [
+      "Docker",
+      "Docker Compose",
+      "DataRobot",
+      "Streamlit",
+      "Python",
+      "AI/ML",
+      "Containerization",
+      "Kubernetes (planned)"
+    ],
+    impact: [
+      "Containerized multiple Streamlit applications for reproducible environments",
+      "Designed Docker Compose architecture to streamline local deployment",
+      "Improved reliability and portability across engineering teams",
+      "Laid groundwork for internal Kubernetes hosting and orchestration",
+      "Collaborated cross-team to align services with existing CI/CD and infrastructure"
+    ]
+  },
+  {
+    id: "hit",
+    title: "Health of IT (HIT) Microservices",
+    org: "Valley Bank",
+    summary:
+      ".NET 8 Azure Functions platform for real-time product health, notifications, and a Vue.js dashboard; Cosmos DB + Service Bus; Terraform + Azure Pipelines.",
+    href: null,
+    code: null,
+    tags: [
+      ".NET 8",
+      "C#",
+      "Azure Functions",
+      "Cosmos DB",
+      "Azure Service Bus",
+      "Terraform",
+      "Azure Pipelines",
+      "CI/CD",
+      "OpenAPI/Swagger",
+      "NUnit",
+      "Moq",
+      "Logging & Observability",
+      "Vue.js",
+      "Agile/Scrum"
+    ],
+    impact: [
+      "Owned 8+ .NET 8 services across EXP/PRC/SYS layers",
+      "Implemented structured logging for cross-service traceability",
+      "Automated deployments with Terraform and Azure Pipelines",
+      "Maintained strong unit test coverage (NUnit/Moq) and clear API contracts (OpenAPI)"
+    ]
+  },
+  {
+    id: "pet",
+    title: "Pet Adoption Prediction Dashboard",
+    org: "Western Governors University",
+    summary:
+      "Streamlit dashboard with ML predictions for shelter adoption likelihood.",
+    href: "https://huggingface.co/spaces/caiteesmith/pet-adoption-prediction-dash",
+    code: "https://github.com/caiteesmith/c964-pet-adoption-prediction-dash",
+    tags: [
+      "Python",
+      "Machine Learning",
+      "Streamlit",
+      "Altair",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Google Colab",
+      "Jupyter Notebooks",
+      "Hugging Face Spaces"
+    ],
+    img: "/images/projects/pet-adoption.webp",
+    impact: [
+      "Built interactive Streamlit dashboard for exploring shelter data",
+      "Implemented ML pipeline (feature engineering and model evaluation)",
+      "Clear visualizations with Altair; reproducible notebooks and code",
+      "Prototyped and trained models in Google Colab",
+      "Deployed interactive app via Hugging Face Spaces with GitHub CI/CD"
+    ]
+  },
+  {
     id: "financial-breakdown",
     title: "The Financial Breakdown",
     org: "Personal Project",
@@ -88,121 +203,6 @@ export const PROJECTS = [
       "Built an analytics dashboard summarizing total applications, unique companies, etc.",
       "Added screenshot uploads to save job posting details before listings expire",
       "Created fast, flexible filtering by status, location type, or keyword"
-    ]
-  },
-  {
-    id: "chatbots",
-    title: "AI/ML Chatbot Containerization",
-    org: "Valley Bank",
-    summary:
-      "Modernizing internal DataRobot AI chatbots by containerizing services with Docker Compose and preparing them for Kubernetes deployment.",
-    href: null,
-    code: null,
-    tags: [
-      "Docker",
-      "Docker Compose",
-      "DataRobot",
-      "Streamlit",
-      "Python",
-      "AI/ML",
-      "Containerization",
-      "Kubernetes (planned)"
-    ],
-    impact: [
-      "Containerized multiple Streamlit applications for reproducible environments",
-      "Designed Docker Compose architecture to streamline local deployment",
-      "Improved reliability and portability across engineering teams",
-      "Laid groundwork for internal Kubernetes hosting and orchestration",
-      "Collaborated cross-team to align services with existing CI/CD and infrastructure"
-    ]
-  },
-  {
-    id: "hit",
-    title: "Health of IT (HIT) Microservices",
-    org: "Valley Bank",
-    summary:
-      ".NET 8 Azure Functions platform for real-time product health, notifications, and a Vue.js dashboard; Cosmos DB + Service Bus; Terraform + Azure Pipelines.",
-    href: null,
-    code: null,
-    tags: [
-      ".NET 8",
-      "C#",
-      "Azure Functions",
-      "Cosmos DB",
-      "Azure Service Bus",
-      "Terraform",
-      "Azure Pipelines",
-      "CI/CD",
-      "OpenAPI/Swagger",
-      "NUnit",
-      "Moq",
-      "Logging & Observability",
-      "Vue.js",
-      "Agile/Scrum"
-    ],
-    impact: [
-      "Owned 8+ .NET 8 services across EXP/PRC/SYS layers",
-      "Implemented structured logging for cross-service traceability",
-      "Automated deployments with Terraform and Azure Pipelines",
-      "Maintained strong unit test coverage (NUnit/Moq) and clear API contracts (OpenAPI)"
-    ]
-  },
-  {
-    id: "hotlist",
-    title: "HotList Search Service",
-    org: "Valley Bank",
-    summary:
-      "A .NET 8 SYS and EXP-layer microservice that validates and processes hotlist search requests, used by front-office teams to quickly identify potential high-risk customers by querying internal customer records and returning standardized match results.",
-    href: null,
-    code: null,
-    tags: [
-      ".NET 8",
-      "C#",
-      "Clean Architecture",
-      "SYS/EXP Layers",
-      "Azure Functions",
-      "OpenAPI",
-      "DTOs",
-      "NUnit",
-      "Moq"
-    ],
-    impact: [
-      "Built the SYS-layer service used by front-office teams to identify high-risk customers",
-      "Implemented flexible validation across five search criteria",
-      "Designed clean DTOs and contracts across EXP > SYS > repository layers",
-      "Normalized search logic and response models for consistent EXP consumption",
-      "Produced clear API documentation with OpenAPI/Swagger",
-      "Created comprehensive NUnit unit tests for validators, services, and controllers",
-      "Guided teammate through building the EXP microservice from config to deployment"
-    ]
-  },
-  {
-    id: "pet",
-    title: "Pet Adoption Prediction Dashboard",
-    org: "Western Governors University",
-    summary:
-      "Streamlit dashboard with ML predictions for shelter adoption likelihood.",
-    href: "https://huggingface.co/spaces/caiteesmith/pet-adoption-prediction-dash",
-    code: "https://github.com/caiteesmith/c964-pet-adoption-prediction-dash",
-    tags: [
-      "Python",
-      "Machine Learning",
-      "Streamlit",
-      "Altair",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Google Colab",
-      "Jupyter Notebooks",
-      "Hugging Face Spaces"
-    ],
-    img: "/images/projects/pet-adoption.webp",
-    impact: [
-      "Built interactive Streamlit dashboard for exploring shelter data",
-      "Implemented ML pipeline (feature engineering and model evaluation)",
-      "Clear visualizations with Altair; reproducible notebooks and code",
-      "Prototyped and trained models in Google Colab",
-      "Deployed interactive app via Hugging Face Spaces with GitHub CI/CD"
     ]
   },
   {
