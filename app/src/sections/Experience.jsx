@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/Card";
 
 /** ----------------------------
- *  Data (keep outside component)
+ *  Data
  *  ---------------------------- */
 const ROLES = [
   {
@@ -24,26 +24,30 @@ const ROLES = [
       "C#",
       "Azure Functions",
       "SQL Server",
+      "Cosmos DB",
       "Microservices",
       "REST APIs",
-      "OpenAPI",
+      "OpenAPI/Swagger",
       "Clean Architecture",
       "Azure DevOps",
       "Terraform",
       "CI/CD",
       "Docker",
       "Kubernetes",
-      "Cosmos DB",
-      "NUnit/Moq"
+      "Application Insights",
+      "Key Vault",
+      "Service Bus",
+      "NUnit",
+      "Moq"
     ],
     impact: [
-      "Delivered 8+ C#/.NET Azure Function microservices supporting internal product workflows and notification services",
-      "Exposed secure HTTP APIs for CRUD operations, standardized responses, and health monitoring",
-      "Developed HotList customer search service using SQL Server, repository patterns, and layered validation",
-      "Built Terraform & Azure DevOps pipelines to standardize multi-environment deployments",
-      "Improved reliability through structured logging and 80%+ unit test coverage",
-      "Automated Python-based data transformation workflows to ingest and synchronize data into Cosmos DB",
-      "Leading cross-team standardization of Azure DevOps repos and CI/CD to enable Kubernetes deployment of AI chatbot services"
+      "Developed the HotList customer search service using SQL Server, repository patterns, conditional validation, and regulated search rules",
+      "Delivered 8+ .NET 8 Azure Function microservices supporting regulated product workflows, real-time health checks, and notification pipelines",
+      "Integrated SQL Server and Cosmos DB to support data verification and product-health ingestion",
+      "Integrated a TipTap rich text editor into the HIT dashboard to improve how internal teams format and send product-health notifications",
+      "Built Terraform & Azure DevOps pipelines enabling repeatable, multi-environment deployments and automated infrastructure provisioning",
+      "Improved reliability and observability through structured logging and 80%+ unit test coverage across key services",
+      "Automated Python data-transformation workflows for ingesting and synchronizing product-health data into Cosmos DB",
     ]
   },
   {
@@ -59,21 +63,21 @@ const ROLES = [
     when: "July 2023 - May 2024",
     logo: "thorlabs",
     chips: [
-      "Mobile app redesign",
-      "Cross-platform development",
-      "UI/UX modernization",
-      "Release management",
-      "Cross-team collaboration",
+      "Mobile App Redesign",
+      "Cross-Platform Development",
+      "UI/UX Modernization",
+      "Release Management",
+      "Cross-Team Collaboration",
       "Swift (iOS)",
       "Java (Android)",
-      "App Store & Play Store",
+      "App Store & Play Store"
     ],
     impact: [
-      "Led redesign of a cross-platform optical calculator (iOS & Android)",
-      "Translated complex optical formulas into intuitive, user-facing tools",
-      "Shipped and maintained production releases via App Store & Google Play",
-      "Partnered with engineering and product stakeholders to refine requirements and deliver UI/UX modernization",
-    ],
+      "Led redesign and modernization of cross-platform optical calculator apps (iOS & Android) used by global customers",
+      "Translated complex optical formulas into accurate, intuitive mobile interactions for non-technical users",
+      "Owned release management across App Store and Google Play, including build pipelines, QA workflows, and versioning",
+      "Collaborated with optics engineers, product teams, and QA to refine requirements and validate scientific accuracy"
+    ]
   },
   {
     role: "Digital Platform Manager",
@@ -81,22 +85,23 @@ const ROLES = [
     when: "Mar 2023 - Nov 2023",
     logo: "asw",
     chips: [
-      "Website optimization",
-      "UX strategy",
+      "Website Optimization",
+      "UX Strategy",
       "Technical SEO",
-      "Analytics & insights",
-      "Content optimization",
-      "Content creation",
-      "Conversion-focused design",
-      "Social media management",
+      "Analytics & Insights",
+      "Content Optimization",
+      "Content Creation",
+      "Blog Writing",
+      "Conversion-Focused Design",
+      "Social Media Management"
     ],
-
     impact: [
-      "Improved website UX across desktop and mobile experiences",
-      "Applied technical SEO and performance optimizations",
-      "Created and managed original photo/video content for social platforms",
-      "Refined pages and content using analytics-driven insights",
-    ],
+      "Improved website UX and navigation across desktop and mobile to reduce friction and strengthen lead generation",
+      "Implemented technical SEO fixes, page speed optimizations, and keyword-driven improvements to increase organic visibility",
+      "Produced photo/video content and wrote blog posts to support brand credibility, education, and search performance",
+      "Used analytics, heatmaps, and customer behavior insights to refine landing pages, CTAs, and conversion flows",
+      "Standardized content structure and on-site messaging to improve clarity, consistency, and user trust"
+    ]
   },
   {
     role: "Senior Web Developer",
@@ -104,21 +109,25 @@ const ROLES = [
     when: "May 2013 - Mar 2023",
     logo: "hipb2b",
     chips: [
-      "Frontend system ownership",
-      "High-conversion landing pages",
-      "Long-term client support",
-      "SEO & performance optimization",
-      "CMS architecture",
+      "Frontend System Ownership",
+      "High-Conversion Landing Pages",
+      "SEO & Performance Optimization",
+      "CMS Architecture",
+      "Long-Term Client Support",
+      "Responsive Design",
       "HTML5",
       "CSS3",
+      "JavaScript",
       "PHP",
-      "WordPress",
+      "WordPress"
     ],
     impact: [
-      "Led design and development of scalable marketing websites and campaign landing pages supporting hundreds of B2B client initiatives",
-      "Created reusable HTML/CSS templates & PHP components for faster delivery",
-      "Supported ongoing campaign iterations and client updates at scale",
-    ],
+      "Owned frontend architecture for high-traffic marketing sites and landing pages powering hundreds of B2B demand-gen campaigns",
+      "Built reusable HTML/CSS templates and modular PHP components to accelerate campaign delivery",
+      "Optimized sites for SEO, page speed, and mobile experiences, improving conversion rates across multiple client verticals",
+      "Led long-term client support, troubleshooting, and iterative enhancements across multi-year engagements",
+      "Collaborated with design and operations teams to translate campaign goals into reliable, on-brand web experiences"
+    ]
   },
   {
     role: "Owner, Wedding Photographer",
@@ -126,20 +135,26 @@ const ROLES = [
     when: "June 2018 - now",
     logo: "csp",
     chips: [
-      "Creative direction",
-      "Business operations",
-      "Client experience design",
-      "Wedding day coordination",
-      "High-volume photo editing",
-      "Content development",
-      "Team & vendor coordination",
+      "Creative Direction",
+      "Operations Management",
+      "Client Experience",
+      "Workflow Automation",
+      "Project Management",
+      "Process Optimization",
+      "Team Coordination",
+      "High-Volume Editing",
+      "Bookkeeping",
+      "Content Strategy"
     ],
     impact: [
-      "Photographed 15-30 weddings/year with 99% client satisfaction",
-      "Delivered ~1,000 curated images per wedding with 100% on-time delivery",
-      "Managed clients, vendors, timelines, and second shooters end-to-end",
-    ],
-  },
+      "Run a full-service photography business delivering 15-30 weddings/year with consistently high client satisfaction",
+      "Manage end-to-end operations including booking, timelines, day-of execution, editing workflows, and final delivery",
+      "Handle all bookkeeping, invoicing, budgeting, and financial planning to maintain profitable operations",
+      "Build automated client communication flows, service templates, and repeatable delivery processes",
+      "Coordinate second shooters, vendors, and logistics to ensure smooth and on-time execution",
+      "Deliver ~1,000 curated images per wedding with reliable, on-schedule turnaround"
+    ]
+  }
 ];
 
 /** ----------------------------

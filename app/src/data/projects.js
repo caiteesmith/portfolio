@@ -94,6 +94,29 @@ export const PROJECTS = [
     ]
   },
   {
+    id: "tiptap-editor",
+    title: "Rich Text Editor Integration",
+    org: "Valley Bank",
+    summary:
+      "Integrated a TipTap-powered rich text editor into the internal Vue.js product health dashboard, enabling teams to compose formatted notifications and improve communication clarity.",
+    href: null,
+    code: null,
+    tags: [
+      "Vue.js",
+      "TipTap",
+      "JavaScript",
+      "API Integration",
+      "UX Enhancements"
+    ],
+    impact: [
+      "Implemented a TipTap rich text editor within an existing Vue.js dashboard, replacing plain text inputs for product-health notifications",
+      "Configured toolbar options, formatting rules, and content schema to align with internal communication standards",
+      "Ensured compatibility with existing backend APIs and notification payloads",
+      "Improved usability by enabling bold/italic text, hyperlinks, and structured formatting",
+      "Contributed UI/UX enhancements that improved clarity, readability, and consistency of internal product-status updates"
+    ]
+  },
+  {
     id: "pet",
     title: "Pet Adoption Prediction Dashboard",
     org: "Western Governors University",
