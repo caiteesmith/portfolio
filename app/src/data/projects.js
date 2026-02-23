@@ -4,7 +4,7 @@ export const PROJECTS = [
     title: "HotList Search Service",
     org: "Valley Bank",
     summary:
-  "A .NET 8 microservice built using Clean Architecture (SYS/EXP layers) to validate and process hotlist search requests in a regulated financial environment. The service enables front-office teams to identify potential high-risk customers by executing multi-criteria searches against internal records and returning standardized, audit-friendly match results.",
+      "A .NET 8 Azure Functions microservice built with Clean Architecture (SYS/EXP layers) to validate, process, and execute hotlist search requests in a regulated financial environment. The service performs multi-criteria searches across SQL Server datasets, derives customer type, and returns standardized, audit-friendly match responses for front-office teams.",
     href: null,
     code: null,
     tags: [
@@ -16,16 +16,21 @@ export const PROJECTS = [
       "Repository Pattern",
       "OpenAPI",
       "NUnit",
+      "Azure Key Vault",
+      "Application Insights",
       "Azure DevOps"
     ],
     impact: [
-      "Built the SYS-layer service used by front-office teams to identify high-risk customers",
-      "Implemented flexible validation across five search criteria",
-      "Designed clean DTOs and contracts across EXP > SYS > repository layers",
-      "Normalized search logic and response models for consistent EXP consumption",
-      "Produced clear API documentation with OpenAPI/Swagger",
-      "Created comprehensive NUnit unit tests for validators, services, and controllers",
-      "Guided teammate through building the EXP microservice from config to deployment"
+      "Built the SYS-layer service enabling regulated high-risk customer searches",
+      "Implemented conditional validation across five search criteria",
+      "Integrated SQL Server using repository patterns for multi-table queries",
+      "Authored implementation pattern docs for SQL Server access in Azure Functions",
+      "Defined clean DTO and contract boundaries across EXP → SYS → repository layers",
+      "Added customer-type derivation logic based on tax identifier rules",
+      "Standardized response modeling with field-level null suppression",
+      "Documented endpoints with OpenAPI/Swagger for partner alignment",
+      "Created NUnit tests for validation, business logic, mapping, and no-match cases",
+      "Supported teammate in building and deploying the EXP-layer microservice"
     ]
   },
   {
@@ -33,7 +38,7 @@ export const PROJECTS = [
     title: "Health of IT (HIT) Microservices",
     org: "Valley Bank",
     summary:
-      ".NET 8 Azure Functions platform for real-time product health, notifications, and a Vue.js dashboard; Cosmos DB + Service Bus; Terraform + Azure Pipelines.",
+      "A .NET 8 Azure Functions ecosystem powering real-time product health visibility, automated notifications, and an internal Vue.js dashboard. The platform integrates Cosmos DB, Azure Service Bus, and structured observability patterns to support regulated, multi-environment operations across the bank.",
     href: null,
     code: null,
     tags: [
@@ -41,22 +46,25 @@ export const PROJECTS = [
       "C#",
       "Azure Functions",
       "Cosmos DB",
-      "Azure Service Bus",
       "Terraform",
       "Azure Pipelines",
       "CI/CD",
       "OpenAPI/Swagger",
       "NUnit",
       "Moq",
-      "Logging & Observability",
+      "Logging",
       "Vue.js",
       "Agile/Scrum"
     ],
     impact: [
-      "Owned 8+ .NET 8 services across EXP/PRC/SYS layers",
-      "Implemented structured logging for cross-service traceability",
-      "Automated deployments with Terraform and Azure Pipelines",
-      "Maintained strong unit test coverage (NUnit/Moq) and clear API contracts (OpenAPI)"
+      "Delivered and maintained 8+ production Azure Functions across EXP/PRC/SYS layers",
+      "Built product-health APIs, nightly sync jobs, and real-time notification microservices",
+      "Integrated Cosmos DB for storing product-health data and powering real-time dashboard queries",
+      "Created structured logging patterns for cross-service traceability via App Insights",
+      "Established IaC using Terraform and deployments through Azure Pipelines",
+      "Produced clean API definitions with OpenAPI/Swagger",
+      "Maintained unit test coverage with NUnit/Moq across validators and services",
+      "Enhanced the internal Vue.js dashboard with real-time product status rendering"
     ]
   },
   {

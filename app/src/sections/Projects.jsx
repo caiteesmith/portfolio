@@ -127,7 +127,6 @@ export default function Projects({ onOpenCaseStudy }) {
                     </Button>
                   )}
 
-                  {/* Case study button only for projects that actually have one */}
                   {!p.href &&
                     !p.code &&
                     (p.id === "hit" || p.id === "chatbots" || p.id === "hotlist") && (

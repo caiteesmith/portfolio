@@ -1256,40 +1256,27 @@ export default function CaseStudyModal({ open, onClose }) {
                 <div>
                   <p className="font-semibold">My role</p>
                   <ul className="list-disc ml-5 mt-1 space-y-1">
-                    <li>Owned the SYS-layer implementation for the HotList customer search service</li>
-                    <li>
-                      Designed validation that supports strict multi-field criteria for front-office
-                      screening of potential high-risk customers
-                    </li>
-                    <li>
-                      Created DTO boundaries to separate EXP → SYS → repository concerns cleanly
-                    </li>
-                    <li>
-                      Implemented customer matching logic against SQL Server-based internal datasets
-                    </li>
-                    <li>
-                      Wired the Azure Functions app into Application Insights, Key Vault, and App
-                      Configuration for telemetry, secrets, and environment-specific settings
-                    </li>
-                    <li>
-                      Fully guided a teammate through building the EXP layer, from project structure
-                      and configuration to API alignment, testing patterns, and deployment
-                    </li>
-                    <li>Wrote NUnit/Moq tests for validators, services, and controllers</li>
+                    <li>Owned the SYS-layer implementation for the HotList customer search microservice</li>
+                    <li>Implemented conditional, multi-field validation supporting regulated high-risk customer screening</li>
+                    <li>Defined clear DTO boundaries to separate EXP → SYS → repository responsibilities</li>
+                    <li>Developed customer matching logic across multiple SQL Server tables</li>
+                    <li>Authored implementation-pattern documentation for securely connecting Azure Functions to SQL Server</li>
+                    <li>Integrated Application Insights, Key Vault, and App Configuration for telemetry, secrets, and environment management</li>
+                    <li>Mentored a teammate through building the EXP layer, from project structure and config to API alignment and deployment</li>
+                    <li>Wrote NUnit/Moq tests for validation, business logic, mapping, and no-match cases</li>
                   </ul>
                 </div>
               </div>
+
               <div>
                 <p className="font-semibold">Impact</p>
                 <ul className="list-disc ml-5 mt-1 space-y-1">
-                  <li>Improved reliability with strict yet flexible validation</li>
-                  <li>Standardized search responses for the EXP experience layer</li>
-                  <li>Reduced ambiguity via clear structured error messages</li>
-                  <li>
-                    Established a secure, observable Azure Functions pattern using App Insights, Key
-                    Vault, and App Configuration
-                  </li>
-                  <li>Documented the API with OpenAPI/Swagger for partner teams</li>
+                  <li>Improved reliability through strict yet flexible request validation</li>
+                  <li>Standardized response models for consistent EXP-layer consumption</li>
+                  <li>Reduced ambiguity with structured error outputs and cleaner null suppression</li>
+                  <li>Established a secure, observable Azure Functions pattern leveraging App Insights, Key Vault, and App Configuration</li>
+                  <li>Delivered OpenAPI/Swagger documentation to align partner teams and streamline integration</li>
+                  <li>Provided repeatable SQL Server implementation guidance for future microservices</li>
                 </ul>
               </div>
             </div>
@@ -1299,6 +1286,7 @@ export default function CaseStudyModal({ open, onClose }) {
                 ".NET 8",
                 "Azure Functions",
                 "SQL Server",
+                "Repository Pattern",
                 "Application Insights",
                 "Key Vault",
                 "App Configuration",
@@ -1308,8 +1296,8 @@ export default function CaseStudyModal({ open, onClose }) {
                 "Validation",
                 "NUnit",
                 "Moq",
-                "OpenAPI",
-                "Logging & Error Handling",
+                "OpenAPI/Swagger",
+                "Error Handling"
               ].map((t) => (
                 <span
                   key={t}
@@ -1321,8 +1309,7 @@ export default function CaseStudyModal({ open, onClose }) {
             </div>
 
             <p className="mt-4 text-[12px] opacity-70">
-              *Internal schemas, PII-handling rules, and matching heuristics omitted for
-              confidentiality.
+              *Internal schemas, PII-handling rules, and matching heuristics omitted for confidentiality.
             </p>
           </>
         )}
