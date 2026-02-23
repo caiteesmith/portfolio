@@ -7,11 +7,13 @@ import { useEffect, useState } from "react";
 
 export default function Hero(){
   const titles = [
-    ".NET/C#/Azure Functions dev",
-    "clean architecture advocate",
-    "DevOps & CI/CD nerd",
-    "Scrum & Agile practitioner",
-    "front-end/UI enthusiast",
+    "Cloud-Native .NET & Azure Functions Dev",
+    "REST API & Microservices Specialist",
+    "Clean Architecture Advocate",
+    "CI/CD & DevOps Enthusiast",
+    "Backend Engineer Who Loves Good UI/UX",
+    "Scrum & Agile Practitioner",
+    "Team-First Dev Who Owns What She Builds"
   ];
   const [titleIdx,setTitleIdx] = useState(0);
   useEffect(() => { const id=setInterval(()=>setTitleIdx(i=>(i+1)%titles.length),2000); return ()=>clearInterval(id); }, []);
@@ -38,7 +40,7 @@ export default function Hero(){
       <div>
         <Parallax strength={16}>
           <div className="relative w-full max-w-sm mx-auto">
-            <div className="absolute -inset-6 rounded-[32px] blur-2xl opacity-40 bg-gradient-to-tr from-pink-300/30 via-violet-300/30 to-amber-300/30" />
+            <div className="absolute -inset-6 rounded-4xl blur-2xl opacity-40 bg-linear-to-tr from-pink-300/30 via-violet-300/30 to-amber-300/30" />
               <Logo className="relative rounded-2xl w-full mt-8" />
           </div>
         </Parallax>
