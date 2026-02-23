@@ -218,7 +218,7 @@ export const PROJECTS = [
     title: "Personal Portfolio",
     org: "Personal",
     summary:
-      "React + Vite app with Tailwind CSS, Framer Motion, and Lucide React icons.",
+      "A fully custom React + Vite portfolio that highlights engineering and photography work with a modern component architecture, Tailwind styling, accessibility-first UI, dark mode, and smooth Framer Motion animations. Designed for performance, maintainability, and a polished end-to-end user experience.",
     href: "https://caiteesmith.com/",
     code: "https://github.com/caiteesmith/portfolio-main",
     tags: [
@@ -228,15 +228,23 @@ export const PROJECTS = [
       "Framer Motion",
       "Lucide React",
       "Responsive Design",
+      "Design Systems",
       "Accessibility",
       "Dark Mode",
-      "Netlify"
+      "SEO",
+      "SPA",
+      "Performance Optimization",
+      "Netlify",
+      "CI/CD"
     ],
     img: "/images/projects/portfolio-mat.webp",
     impact: [
-      "Migrated from static Bootstrap to React, Vite, and Tailwind",
-      "Accessible components, keyboard-friendly nav, dark mode",
-      "Animated backgrounds and performant motion with Framer Motion"
+      "Rebuilt a static Bootstrap site into a React SPA with modular components and Vite",
+      "Implemented a design using Tailwind CSS and shared UI primitives for consistency",
+      "Developed dark/light theme support with Tailwind and CSS variables",
+      "Integrated Framer Motion for subtle transitions and page-level animations",
+      "Configured Netlify CI/CD for automatic deployments from GitHub on every commit",
+      "Built reusable components for project cards, skill tags, and case studies"
     ]
   },
   {
