@@ -46,6 +46,7 @@ export const PROJECTS = [
       "C#",
       "Azure Functions",
       "Cosmos DB",
+      "NoSQL",
       "Terraform",
       "Azure Pipelines",
       "CI/CD",

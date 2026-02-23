@@ -30,6 +30,7 @@ export const SKILL_TAGS = [
   "Microsoft Azure",
   "Microservices",
   "Moq",
+  "NoSQL",
   "NUnit",
   "OpenAPI",
   "Postman",
