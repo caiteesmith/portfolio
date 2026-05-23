@@ -129,7 +129,7 @@ export default function Projects({ onOpenCaseStudy }) {
 
                   {!p.href &&
                     !p.code &&
-                    (p.id === "hit" || p.id === "chatbots" || p.id === "hotlist") && (
+                    (p.id === "hit" || p.id === "chatbots" || p.id === "hotlist" || p.id === "mire") && (
                       <Button size="sm" onClick={() => onOpenCaseStudy?.(p.id)}>
                         Case study
                       </Button>

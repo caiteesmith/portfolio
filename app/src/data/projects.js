@@ -1,5 +1,37 @@
 export const PROJECTS = [
   {
+    id: "mire",
+    title: "MIRE File Viewer",
+    org: "Valley Bank",
+    summary:
+      "A full-stack internal file viewer replacing legacy Synergy desktop software, built across five services: a Vue 3 SPA, an EXP/PRC/SYS ASP.NET Core microservice stack, and a shared blob file service. Bank teams can securely browse and preview documents stored in Azure Blob Storage, with SQL Server powering metadata and file indexing, deployed to AKS via Helm.",
+    href: null,
+    code: null,
+    tags: [
+      "Vue 3",
+      "ASP.NET Core",
+      ".NET 10",
+      "C#",
+      "Azure Blob Storage",
+      "SQL Server",
+      "AKS",
+      "Docker",
+      "Helm",
+      "Azure AD / Entra ID Auth",
+      "Microservices",
+      "REST API",
+      "Azure DevOps",
+      "CI/CD",
+    ],
+    impact: [
+      "Replaced legacy Synergy desktop software with a browser-based internal tool",
+      "Architected five-service system: UI, EXP, PRC, SYS, and blob file service",
+      "Vue 3 SPA with file browsing, search, and in-browser document preview",
+      "ASP.NET Core EXP → PRC → SYS microservice chain with Azure Blob Storage and SQL Server",
+      "Deployed to AKS via Helm charts with Entra ID SSO",
+    ],
+  },
+  {
     id: "hotlist",
     title: "HotList Search Service",
     org: "Valley Bank",
