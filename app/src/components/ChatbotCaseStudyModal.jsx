@@ -154,7 +154,7 @@ export default function ChatbotCaseStudyModal({ open, onClose }) {
             "DataRobot",
             "AI/ML",
             "Containerization",
-            "Kubernetes (planned)",
+            "Kubernetes",
           ].map((t) => (
             <span
               key={t}

@@ -652,11 +652,11 @@ export default function CaseStudyModal({ open, onClose }) {
                 <ul className="list-disc ml-5 mt-1 space-y-1">
                   <li>Sole engineer across all five repos from design through production AKS deployment</li>
                   <li>Authored architecture documentation covering component overview, environment tiers, DB schema, and traffic flow</li>
-                  <li>Built <code>ReportsController</code> and <code>FilesController</code> in the EXP layer with SQL queries</li>
                   <li>Implemented SAS URL generation and chunked blob streaming for large file support</li>
-                  <li>Designed SQL Server schema and seed data for the SYS service</li>
                   <li>Built and wired all five Helm charts and Azure DevOps pipelines</li>
                   <li>Configured Entra ID OIDC SSO for auth-gated access</li>
+                  <li>Wrote all architecture documentation and diagrams covering component overview, environment tiers, DB schema, and traffic flow</li>
+                  <li>Authored a reusable project skeleton for Vue 3 frontend + ASP.NET Core microservice backend with AKS deployment, adopted as the team standard for future internal tools</li>
                 </ul>
               </div>
               <div>
@@ -667,7 +667,7 @@ export default function CaseStudyModal({ open, onClose }) {
                   <li>Users can now search, filter, and preview files entirely in the browser</li>
                   <li>SSO-enforced access aligned with bank identity standards</li>
                   <li>Production-ready five-service system delivered as a solo engineer</li>
-                  <li>Established a reusable AKS microservice + Helm pattern for future internal tools</li>
+                  <li>Project skeleton became the team standard for new C# microservice + Vue frontend AKS deployments</li>
                 </ul>
               </div>
             </div>
@@ -676,7 +676,7 @@ export default function CaseStudyModal({ open, onClose }) {
               {[
                 "Vue 3", "Vite", "nginx", "ASP.NET Core", ".NET 10", "C#",
                 "Azure Blob Storage", "SAS URLs", "SQL Server", "Docker", "Helm",
-                "AKS", "Entra ID", "OIDC", "Azure DevOps", "CI/CD", "EXP/PRC/SYS", "REST API", "pdf.js",
+                "Azure Kubernetes Service (AKS)", "Entra ID", "OIDC", "Azure DevOps", "CI/CD", "EXP/PRC/SYS", "REST API", "pdf.js",
               ].map((t) => (
                 <span
                   key={t}

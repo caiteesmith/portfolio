@@ -17,7 +17,7 @@ export const PROJECTS = [
       "AKS",
       "Docker",
       "Helm",
-      "Azure AD / Entra ID Auth",
+      "Azure AD/Entra ID Auth",
       "Microservices",
       "REST API",
       "Azure DevOps",
@@ -29,6 +29,7 @@ export const PROJECTS = [
       "Vue 3 SPA with file browsing, search, and in-browser document preview",
       "ASP.NET Core EXP → PRC → SYS microservice chain with Azure Blob Storage and SQL Server",
       "Deployed to AKS via Helm charts with Entra ID SSO",
+      "Project skeleton became the team standard for C# microservice + Vue frontend AKS deployments"
     ],
   },
   {
@@ -116,7 +117,7 @@ export const PROJECTS = [
       "Python",
       "AI/ML",
       "Containerization",
-      "Kubernetes (planned)"
+      "Kubernetes"
     ],
     impact: [
       "Containerized multiple Streamlit applications for reproducible environments",
