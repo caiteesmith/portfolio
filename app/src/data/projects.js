@@ -1,5 +1,46 @@
 export const PROJECTS = [
   {
+    id: "dossier",
+    title: "Dossier Studio Management & CRM",
+    org: "Caitee Smith Photography",
+    wip: true,
+    summary:
+      "Built by a software engineer who is also a wedding photographer and business owner, Dossier is a full-stack studio management app born from firsthand frustration with fragmented tools like Dubsado, HoneyBook, and Táve. It handles the full studio lifecycle: leads kanban, bookings, contracts, invoices, client portal, questionnaires, shot lists, timelines, and day-of exports. Designed around how wedding days actually work, not how generic CRMs think they do.",
+    href: "https://dossierstudiomanagement.netlify.app/",
+    code: "https://github.com/caiteesmith/dossier",
+    tags: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Router",
+      "ASP.NET Core",
+      ".NET 10",
+      "C#",
+      "EF Core",
+      "PostgreSQL",
+      "Supabase",
+      "Netlify",
+      "Railway",
+      "REST API",
+      "Anthropic",
+      "dnd-kit",
+      "Drag and Drop",
+    ],
+    img: "images/projects/dossier-ss.png",
+    impact: [
+      "Built a full-stack studio management app to replace apps that simply don't do it all",
+      "Leads kanban with drag-and-drop status management and booking pipeline tracking",
+      "Booking detail view with workflow pipeline, from Lead to Complete",
+      "Contract editor with rich text, inline variable tokens, and signature capture",
+      "Client portal with questionnaire, checklist, timeline, vendor contacts, and documents",
+      "AI blog post generator powered by Anthropic, scoped to each wedding booking",
+      "Location-aware sunset/golden hour calculator using an NOAA solar algorithm",
+      "CODB calculator, workflow estimator, and mileage calculator in a Tools section",
+      "Supabase PostgreSQL + Auth with JWT validated by ASP.NET Core",
+    ],
+  },
+  {
     id: "mire",
     title: "MIRE File Viewer",
     org: "Valley Bank",
@@ -127,29 +168,29 @@ export const PROJECTS = [
       "Collaborated cross-team to align services with existing CI/CD and infrastructure"
     ]
   },
-  {
-    id: "tiptap-editor",
-    title: "Rich Text Editor Integration",
-    org: "Valley Bank",
-    summary:
-      "Integrated a TipTap-powered rich text editor into the internal Vue.js product health dashboard, enabling teams to compose formatted notifications and improve communication clarity.",
-    href: null,
-    code: null,
-    tags: [
-      "Vue.js",
-      "TipTap",
-      "JavaScript",
-      "API Integration",
-      "UX Enhancements"
-    ],
-    impact: [
-      "Implemented a TipTap rich text editor within an existing Vue.js dashboard, replacing plain text inputs for product-health notifications",
-      "Configured toolbar options, formatting rules, and content schema to align with internal communication standards",
-      "Ensured compatibility with existing backend APIs and notification payloads",
-      "Improved usability by enabling bold/italic text, hyperlinks, and structured formatting",
-      "Contributed UI/UX enhancements that improved clarity, readability, and consistency of internal product-status updates"
-    ]
-  },
+  // {
+  //   id: "tiptap-editor",
+  //   title: "Rich Text Editor Integration",
+  //   org: "Valley Bank",
+  //   summary:
+  //     "Integrated a TipTap-powered rich text editor into the internal Vue.js product health dashboard, enabling teams to compose formatted notifications and improve communication clarity.",
+  //   href: null,
+  //   code: null,
+  //   tags: [
+  //     "Vue.js",
+  //     "TipTap",
+  //     "JavaScript",
+  //     "API Integration",
+  //     "UX Enhancements"
+  //   ],
+  //   impact: [
+  //     "Implemented a TipTap rich text editor within an existing Vue.js dashboard, replacing plain text inputs for product-health notifications",
+  //     "Configured toolbar options, formatting rules, and content schema to align with internal communication standards",
+  //     "Ensured compatibility with existing backend APIs and notification payloads",
+  //     "Improved usability by enabling bold/italic text, hyperlinks, and structured formatting",
+  //     "Contributed UI/UX enhancements that improved clarity, readability, and consistency of internal product-status updates"
+  //   ]
+  // },
   {
     id: "pet",
     title: "Pet Adoption Prediction Dashboard",

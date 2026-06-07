@@ -61,7 +61,14 @@ export default function Projects({ onOpenCaseStudy }) {
             >
               <Card className="overflow-hidden">
                 <CardHeader className="mb-2">
-                  <CardTitle className="text-xl">{p.title}</CardTitle>
+                  <div className="flex items-center gap-2">
+                    <CardTitle className="text-xl">{p.title}</CardTitle>
+                    {p.wip && (
+                      <Badge variant="outline" className="text-amber-500 border-amber-400 text-xs">
+                        In Progress
+                      </Badge>
+                    )}
+                  </div>
                   <Badge variant="secondary" className="mt-1">
                     {p.org}
                   </Badge>
