@@ -59,28 +59,28 @@ const ROLES = [
   //   logo: "vb",
   //   chips: ["Technical documentation"]
   // },
-  // {
-  //   role: "Software Engineer",
-  //   org: "Thorlabs",
-  //   when: "July 2023 - May 2024",
-  //   logo: "thorlabs",
-  //   chips: [
-  //     "Mobile App Redesign",
-  //     "Cross-Platform Development",
-  //     "UI/UX Modernization", 
-  //     "Release Management",
-  //     "Cross-Team Collaboration",
-  //     "Swift (iOS)",
-  //     "Java (Android)",
-  //     "App Store & Play Store"
-  //   ],
-  //   impact: [
-  //     "Led redesign and modernization of cross-platform optical calculator apps (iOS & Android) used by global customers",
-  //     "Translated complex optical formulas into accurate, intuitive mobile interactions for non-technical users",
-  //     "Owned release management across App Store and Google Play, including build pipelines, QA workflows, and versioning",
-  //     "Collaborated with optics engineers, product teams, and QA to refine requirements and validate scientific accuracy"
-  //   ]
-  // },
+  {
+    role: "Software Engineer",
+    org: "Thorlabs",
+    when: "July 2023 - May 2024",
+    logo: "thorlabs",
+    chips: [
+      "Mobile App Redesign",
+      "Cross-Platform Development",
+      "UI/UX Modernization", 
+      "Release Management",
+      "Cross-Team Collaboration",
+      "Swift (iOS)",
+      "Java (Android)",
+      "App Store & Play Store"
+    ],
+    impact: [
+      "Led redesign and modernization of cross-platform optical calculator apps (iOS & Android) used by global customers",
+      "Translated complex optical formulas into accurate, intuitive mobile interactions for non-technical users",
+      "Owned release management across App Store and Google Play, including build pipelines, QA workflows, and versioning",
+      "Collaborated with optics engineers, product teams, and QA to refine requirements and validate scientific accuracy"
+    ]
+  },
   {
     role: "Digital Platform Manager",
     org: "Automotive Specialty Wraps",
