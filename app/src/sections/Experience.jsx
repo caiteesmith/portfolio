@@ -17,14 +17,16 @@ const ROLES = [
   {
     role: "Software Engineer",
     org: "Valley Bank",
-    when: "Jan 2025 - now",
+    when: "June 2024 - now",
     logo: "vb",
     chips: [
-      ".NET 8",
+      ".NET 10",
       "C#",
+      "Vue.js",
       "Azure Functions",
       "SQL Server",
       "Cosmos DB",
+      "Azure Blob Storage",
       "Microservices",
       "REST APIs",
       "OpenAPI/Swagger",
@@ -33,52 +35,56 @@ const ROLES = [
       "Terraform",
       "CI/CD",
       "Docker",
-      "Kubernetes",
+      "Kubernetes (AKS)",
+      "Helm",
       "Application Insights",
       "Key Vault",
       "Service Bus",
+      "Streamlit",
+      "Python",
       "NUnit",
-      "Moq"
+      "Moq",
+      "Vitest"
     ],
     impact: [
-      "Developed the HotList customer search service using SQL Server, repository patterns, conditional validation, and regulated search rules",
-      "Delivered 8+ .NET 8 Azure Function microservices supporting regulated product workflows, real-time health checks, and notification pipelines",
-      "Integrated SQL Server and Cosmos DB to support data verification and product-health ingestion",
-      "Integrated a TipTap rich text editor into the HIT dashboard to improve how internal teams format and send product-health notifications",
-      "Built Terraform & Azure DevOps pipelines enabling repeatable, multi-environment deployments and automated infrastructure provisioning",
-      "Improved reliability and observability through structured logging and 80%+ unit test coverage across key services",
-      "Automated Python data-transformation workflows for ingesting and synchronizing product-health data into Cosmos DB",
+      "Built and deployed a full-stack internal document management application solo in four weeks, replacing a legacy desktop tool with a Vue.js, .NET 10, Azure Blob Storage, and SQL Server solution featuring custom UI design, SSO, filtered search, chunked file streaming, and pagination across five AKS-deployed microservices",
+      "Served as solution architect for a Streamlit/DataRobot chatbot, producing technical solution designs and system diagrams, then productionized the prototype by containerizing it, implementing SSO, and deploying to AKS via Helm charts and Azure DevOps pipelines",
+      "Delivered 8+ C#/.NET Azure Function microservices powering a product health notification system, using Cosmos DB for storage, built with Terraform and Azure DevOps CI/CD pipelines and 80%+ unit test coverage",
+      "Developed the HotList customer search microservice supporting multi-criteria queries across regulated financial datasets using SQL Server, repository patterns, and layered validation",
+      "Authored OpenAPI specifications across all developed microservices, establishing consistent API contracts and enabling seamless cross-team integration",
+      "Diagnosed and resolved production incidents within a regulated financial environment, maintaining audit readiness through CAB submissions, structured logging, and standardized response envelopes",
+      "Automated Python data transformation workflows for ingesting and synchronizing product health data into Cosmos DB",
     ]
   },
-  {
-    role: "Software Engineering Intern",
-    org: "Valley Bank",
-    when: "June 2024 - Dec 2024",
-    logo: "vb",
-    chips: ["Technical documentation"]
-  },
-  {
-    role: "Software Engineer",
-    org: "Thorlabs",
-    when: "July 2023 - May 2024",
-    logo: "thorlabs",
-    chips: [
-      "Mobile App Redesign",
-      "Cross-Platform Development",
-      "UI/UX Modernization",
-      "Release Management",
-      "Cross-Team Collaboration",
-      "Swift (iOS)",
-      "Java (Android)",
-      "App Store & Play Store"
-    ],
-    impact: [
-      "Led redesign and modernization of cross-platform optical calculator apps (iOS & Android) used by global customers",
-      "Translated complex optical formulas into accurate, intuitive mobile interactions for non-technical users",
-      "Owned release management across App Store and Google Play, including build pipelines, QA workflows, and versioning",
-      "Collaborated with optics engineers, product teams, and QA to refine requirements and validate scientific accuracy"
-    ]
-  },
+  // {
+  //   role: "Software Engineering Intern",
+  //   org: "Valley Bank",
+  //   when: "June 2024 - Dec 2024",
+  //   logo: "vb",
+  //   chips: ["Technical documentation"]
+  // },
+  // {
+  //   role: "Software Engineer",
+  //   org: "Thorlabs",
+  //   when: "July 2023 - May 2024",
+  //   logo: "thorlabs",
+  //   chips: [
+  //     "Mobile App Redesign",
+  //     "Cross-Platform Development",
+  //     "UI/UX Modernization", 
+  //     "Release Management",
+  //     "Cross-Team Collaboration",
+  //     "Swift (iOS)",
+  //     "Java (Android)",
+  //     "App Store & Play Store"
+  //   ],
+  //   impact: [
+  //     "Led redesign and modernization of cross-platform optical calculator apps (iOS & Android) used by global customers",
+  //     "Translated complex optical formulas into accurate, intuitive mobile interactions for non-technical users",
+  //     "Owned release management across App Store and Google Play, including build pipelines, QA workflows, and versioning",
+  //     "Collaborated with optics engineers, product teams, and QA to refine requirements and validate scientific accuracy"
+  //   ]
+  // },
   {
     role: "Digital Platform Manager",
     org: "Automotive Specialty Wraps",
@@ -483,7 +489,7 @@ export default function Experience() {
                   childrenBottom={
                     <>
                       <HighlightsChips chips={c.chips} />
-                      <RoleStack items={c.timeline} />
+                      {c.timeline.length > 1 && <RoleStack items={c.timeline} />}
                       <ImpactRows items={c.impact} />
                     </>
                   }
